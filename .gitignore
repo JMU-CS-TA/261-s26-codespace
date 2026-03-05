@@ -2,10 +2,19 @@
 *.d
 
 # Object files
-*.o
-*.ko
-*.obj
-*.elf
+*/main.o
+p0-intro/p0-intro.o
+p1-check/p1-check.o
+p2-load/p2-load.o
+
+# Test suite files
+*/tests/testsuite
+*/tests/testsuite.o
+*/tests/utests.txt
+*/tests/itests.txt
+*/tests/public.o
+*/tests/valgrind
+*/tests/outputs
 
 # Linker output
 *.ilk
@@ -21,12 +30,6 @@
 *.a
 *.la
 *.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
 
 # Executables
 *.exe
@@ -53,3 +56,13 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Project executables
+p0-intro/intro
+p1-check/y86
+p2-load/y86
+lab06/freq
+lab06/debug
+lab08/buggy_code
+lab25/files
+lab26/mcpi
